@@ -11,6 +11,7 @@ delay = 1
 # Start the script with a delay
 time.sleep(2)
 assault_delay = 6
+save_delay = 4
 
 # Main loop to click repeatedly
 while True:
@@ -18,7 +19,7 @@ while True:
     for coord in fk_coordinates:
         # Wait for save black screen to leave
         if(index == 1):
-            time.sleep(2.5)
+            time.sleep(save_delay)
 
         # Wait for units to load into battlefield before clicking assault
         if(index == 6):
@@ -31,12 +32,17 @@ while True:
 
         # If we're in the EURLA coordinate, we iterate throught all coordinates to start a new battle.
         if(index == 7):
+            index2 = 0
             for coord in fk_coordinates:
-                if(index == 2):
+                # Wait for save black screen to leave
+                if(index2 == 1):
+                    time.sleep(save_delay)
+                if(index2 == 6):
                     time.sleep(assault_delay)
                 pyautogui.moveTo(coord)
                 pyautogui.click()
                 time.sleep(delay)
+                index2 += 1
         
         index+= 1
 
