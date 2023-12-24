@@ -3,7 +3,7 @@ import time
 
 # Coordinates of where to click (x, y)
 click_coordinates = [(1908, 658), (2376, 967), (2572, 1398), (2503, 1257)] # Replace with your coordinates
-org_coordinates = [(1257, 1038), (855, 968) ,(1051, 1398) ,(989, 1250)]
+org_coordinates = [(132, 331), (855, 968) ,(1051, 1398) ,(989, 1250)]
 # Time delay between actions
 delay = 1
 
