@@ -3,17 +3,17 @@ import time
 import keyboard  # You need to install this library using 'pip install keyboard'
 
 # Coordinates of where to click (x, y)
-click_coordinates = [(1688,908), #The bottom right flag
-                     (1135,217), #The Stage clicking
-                     (837,1053), #Yes to Battle
-                     (1957,1332),(1145,940),(1142,553),
-                     (1642,1145),# The Assault Button
-                     (2070,693),(250,1290),(837,1081)]  # Replace with your coordinates
+click_coordinates = [(1348,1230), # Close
+                     (1503,850), #The bottom right flag
+                     (679,461), #The Stage clicking
+                     (700,1000), #Yes to Battle
+                     (1755,1265),(1000,890),(1000,535), #Speed Up
+                     (1464,1086),# The Assault Button
+                     (1348,1230)]  # Close
 
 # Time delay between actions
 delay = 1
-delay_later = 5
-
+delay_later = 5 
 # Start the script with a delay
 time.sleep(2)
 
